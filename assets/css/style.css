@@ -2873,6 +2873,7 @@ hr {
 @media (max-width: 767px) {
   .testimonial-area {
     padding-top: 0px;
+    /* transform: scale(0.7); */
   }
 }
 .testimonial-area .testimonial-caption {
@@ -2935,7 +2936,7 @@ hr {
   background: none;
   border: 0;
   padding: 0;
-  z-index: 99;
+  z-index: 1;
   opacity: 1;
   visibility: visible;
   height: 45px;
@@ -2974,7 +2975,10 @@ hr {
   right: 0;
   z-index: 99;
 }
-
+.slick-prev,
+.slick-next {
+  z-index: 2;
+}
 .h1-testimonial-active button.slick-next {
   left: auto;
   right: -133px;
