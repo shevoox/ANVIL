@@ -63,6 +63,11 @@ $(".logo-slider").slick({
   slidesToShow: 3,
   slidesToScroll: 3,
   autoplay: true,
+  arrows: true,
+  prevArrow:
+    '<button type="button" class="slick-prev"><i class="ti-angle-left"></i></button>',
+  nextArrow:
+    '<button type="button" class="slick-next"><i class="ti-angle-right"></i></button>',
   autoplaySpeed: 2000,
   responsive: [
     {
@@ -115,8 +120,8 @@ $(".logo-slider").slick({
       }
     );
     BasicSlider.slick({
-      autoplay: false,
-      autoplaySpeed: 10000,
+      autoplay: true,
+      autoplaySpeed: 3000,
       dots: false,
       fade: true,
       arrows: true,
@@ -152,7 +157,7 @@ $(".logo-slider").slick({
       dots: false,
       infinite: true,
       speed: 1000,
-      autoplay: false,
+      autoplay: true,
       loop: true,
       arrows: true,
       prevArrow:
@@ -169,7 +174,7 @@ $(".logo-slider").slick({
             slidesToScroll: 1,
             infinite: true,
             dots: false,
-            arrow: true,
+            arrow: false,
           },
         },
         {
@@ -177,7 +182,7 @@ $(".logo-slider").slick({
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            arrows: false,
           },
         },
         {
@@ -185,7 +190,7 @@ $(".logo-slider").slick({
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: true,
+            arrows: false,
           },
         },
       ],
