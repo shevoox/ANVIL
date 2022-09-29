@@ -287,7 +287,7 @@ hr {
     margin-bottom: 45px;
   }
 }
-.btn-group button {
+.btn-group button:first-child {
   position: relative;
   background: #29225c;
   -moz-user-select: none;
@@ -309,10 +309,10 @@ hr {
   overflow: hidden;
   margin-left: 5px;
 }
-.btn-group button a {
+.btn-group button:first-child a {
   color: #fff !important;
 }
-.btn-group button:not(:last-child) {
+.btn-group button:first-child:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
 
@@ -322,7 +322,7 @@ hr {
   clear: both;
   display: table;
 }
-.btn-group button::before {
+.btn-group button:first-child::before {
   content: "";
   position: absolute;
   left: 0;
@@ -338,19 +338,88 @@ hr {
   transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
   transform: scaleX(0);
 }
-.btn-group button:hover::before {
+.btn-group button:first-child:hover::before {
   transform: scaleX(1);
   color: #fff !important;
   z-index: -1;
 }
-.btn-group button {
+.btn-group button:first-child {
   text-transform: uppercase;
 }
-.btn-group button.focus,
-.btn-group button:focus {
+.btn-group button:first-child.focus,
+.btn-group button:first-child:focus {
   outline: 0;
   box-shadow: none;
 }
+
+/* second btn*/
+.btn-group button:last-child {
+  position: relative;
+
+  background: #ff656a;
+  -moz-user-select: none;
+  text-transform: uppercase;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 0;
+  margin-bottom: 0;
+  padding: 25px 20px;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  border: 0;
+  overflow: hidden;
+  margin-left: 5px;
+}
+.btn-group button:last-child a {
+  color: #fff !important;
+}
+.btn-group button:last-child:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn-group button:last-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #29225c;
+  z-index: 1;
+  border-radius: 5px;
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+.btn-group button:last-child:hover::before {
+  transform: scaleX(1);
+  color: #fff !important;
+  z-index: -1;
+}
+
+.btn-group button:last-child {
+  text-transform: uppercase;
+}
+.btn-group button:last-child.focus,
+.btn-group button:last-child:focus {
+  outline: 0;
+  box-shadow: none;
+}
+/* second btn*/
 /* Add a background color on hover */
 
 .btn {
@@ -2072,11 +2141,11 @@ hr {
   }
 }
 .header-area .header-bottom {
-  padding: 0px 160px;
+  padding: 0px 110px;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .header-area .header-bottom {
-    padding: 22px 50px;
+    padding: 22px 20px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -3049,6 +3118,11 @@ hr {
 .slick-prev,
 .slick-next {
   z-index: 2;
+}
+@media (max-width: 400px) {
+  .slider-active button.slick-arrow {
+    top: 85%;
+  }
 }
 .h1-testimonial-active button.slick-next {
   left: auto;
@@ -6019,3 +6093,10 @@ video:focus {
   cursor: pointer;
 }
 /* video end */
+.log-in {
+  display: flex !important;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-self: center;
+}
