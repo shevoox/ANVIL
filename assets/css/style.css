@@ -331,7 +331,7 @@ hr {
   height: 100%;
   background: #ff656a;
   z-index: 1;
-  border-radius: 5px;
+
   transition: transform 0.5s;
   transition-timing-function: ease;
   transform-origin: 0 0;
@@ -398,7 +398,7 @@ hr {
   height: 100%;
   background: #29225c;
   z-index: 1;
-  border-radius: 5px;
+
   transition: transform 0.5s;
   transition-timing-function: ease;
   transform-origin: 0 0;
