@@ -42,7 +42,7 @@
     </div>
     <!-- Preloader Start -->
 
-    <header>
+    <header id="header">
       <!-- Header Start -->
       <div class="header-area">
         <div class="main-header">
@@ -102,11 +102,27 @@
                 <div class="col-xl-10 col-lg-10 col-md-10">
                   <!-- Main-menu -->
                   <div class="main-menu f-right d-none d-lg-block">
-                    <nav>
+                    <nav id="navbar" class="navbar">
                       <ul id="navigation">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#vision">Vision</a></li>
+                        <li>
+                          <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                          <a
+                            class="scrollto nav-link"
+                            onclick="hide()"
+                            href="#about"
+                            >About</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="scrollto nav-link"
+                            onclick="hide()"
+                            href="#vision"
+                            >Vision</a
+                          >
+                        </li>
                         <li>
                           <a href="#">Services</a>
                           <ul class="submenu">
@@ -149,7 +165,12 @@
                           </ul>
                         </li>
                         <li>
-                          <a href="#achievements">Achievements</a>
+                          <a
+                            class="scrollto nav-link"
+                            onclick="hide()"
+                            href="#achievements"
+                            >Achievements</a
+                          >
                         </li>
                         <li>
                           <a href="career.html">Career</a>
@@ -341,7 +362,7 @@
 
       <!-- Team-profile Start -->
       <!-- About Start -->
-      <div class="space" style="padding-top: 200px" id="about"></div>
+      <div class="space" style="padding-top: 100px" id="about"></div>
       <div class="container-xxl py-5">
         <div class="container">
           <div class="row g-5">
@@ -774,9 +795,15 @@
       </div>
       <!-- Footer End-->
     </footer>
-
+    <script>
+      function hide() {
+        let slicknav = document.querySelector(".slicknav_nav");
+        let btnb = document.querySelector(".slicknav_btn");
+        btnb.click();
+      }
+    </script>
     <!-- JS here -->
-
+    <!-- <script src="./assets/js/navscrol.js"></script> -->
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
@@ -811,5 +838,6 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/navscrol.js"></script>
   </body>
 </html>
