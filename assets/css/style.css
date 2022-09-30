@@ -355,7 +355,6 @@ hr {
 /* second btn*/
 .btn-group button:last-child {
   position: relative;
-
   background: #ff656a;
   -moz-user-select: none;
   text-transform: uppercase;
