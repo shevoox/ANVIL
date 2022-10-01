@@ -32,6 +32,9 @@
 .theme-color {
   color: #ff656a;
 }
+.navbar {
+  padding: 0 1rem !important;
+}
 .boxed-btn {
   background: #fff;
   color: #002e5b !important;
@@ -300,7 +303,7 @@ hr {
   letter-spacing: 1px;
   line-height: 0;
   margin-bottom: 0;
-  padding: 25px 20px;
+  padding: 10px 20px;
   cursor: pointer;
   transition: color 0.4s linear;
   position: relative;
@@ -331,7 +334,6 @@ hr {
   height: 100%;
   background: #ff656a;
   z-index: 1;
-
   transition: transform 0.5s;
   transition-timing-function: ease;
   transform-origin: 0 0;
@@ -366,7 +368,7 @@ hr {
   letter-spacing: 1px;
   line-height: 0;
   margin-bottom: 0;
-  padding: 25px 20px;
+  padding: 17px 20px;
   cursor: pointer;
   transition: color 0.4s linear;
   position: relative;
